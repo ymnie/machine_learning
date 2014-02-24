@@ -20,7 +20,7 @@ def createDataSet(N):
 linear regression by setting up regular term: lambda
 
 '''
-def rigeLinear(data):
+def ridgeLinear(data):
     N = len(data)
     xValue = array(data)[:,0]
     yValue = array(data)[:,1]
@@ -49,7 +49,7 @@ def plotRegCurve(data):
     xValue = array(data)[:,0]
     yValue = array(data)[:,1]
     fig = plt.figure()
-    a, b,lamb = rigeLinear(data)
+    a, b,lamb = ridgeLinear(data)
     plt.plot(array(data)[:,0],array(data)[:,1],'b.')
     plt.plot(xValue,a+b*xValue,'r')
     plt.show()
