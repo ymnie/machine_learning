@@ -56,7 +56,7 @@ def plotFit(data,K):
     plt.plot(xValue,yFit,'r')
     plt.show()
 
-K = 9
+K = 5
 omega = polyReg(data,K)
 print omega
 plotFit(data,K)
