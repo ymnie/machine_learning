@@ -9,11 +9,6 @@ H = - sum(p_i log p_i)
 create a test data set
 '''
 from numpy import *
-def dataSet():
-    data = [[1,1,'yes'],[1,0,'no'],[0,1,'no'],[0,1,'no']]
-    labels =['no surfacing', 'flippers']
-    return data, labels
-
 '''
 calculate the Shannon information
 '''
@@ -62,9 +57,6 @@ def optSplit(data):
             bestFeature = n
     return bestFeature
    
-data,labels = dataSet()
-print splitData(data,0)
-print optSplit(data)
 
 
 
