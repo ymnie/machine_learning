@@ -17,9 +17,9 @@ def sigmoid(x):
     return 1.0/(1+exp(-x))
 
 '''
-gradient descent algorithms to find the optimal parameters
+gradient ascent algorithms to find the optimal parameters
 '''
-def gradDecent(data):
+def gradAscent(data):
     dataMat = mat(data)
     x = array(data)[:,0]
     y = array(data)[:,1]
