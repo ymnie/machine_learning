@@ -56,14 +56,6 @@ def optSplit(data):
             bestInforGain = inforGain
             bestFeature = n
     return bestFeature
-   
-
-
-
-
-
-
-
 
 
 
