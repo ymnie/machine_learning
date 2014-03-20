@@ -12,11 +12,11 @@ this code give us the basic idea of how to process a word documents
 
 '''
 summary:  how to use bayes algorithms for email system
-(1) load row data and output it as the list: loadDateFrom(your file name), note that if yo use set, the string will be 
+(1) load row data and output it as the list: loadDateFrom(your file name), note that if you use set, the string will be 
     sorted
 (2) parsing the data list such that punctuations will be removed
     use textParsing(String)
-(3) create dictionary from each input email, finally you got one list with all words
+(3) create dictionary from each input email, finally you get one list with all words
 (4) call bayes training method to train the data sets 
 
 '''
