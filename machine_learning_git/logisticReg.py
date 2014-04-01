@@ -1,5 +1,4 @@
 '''
-Created on Feb 24, 2013
 this module shows how to classify the data set using logistic function
 @author: yimin.nie
 '''
@@ -31,6 +30,7 @@ def gradAscent(data):
     while error>=finalError:
         h = sigmoid(dataMat*weights)
         error = y - h
-        weights -= beta*dataMat.T*error
+        weights += beta*dataMat.T*error
     return weights
+
            
