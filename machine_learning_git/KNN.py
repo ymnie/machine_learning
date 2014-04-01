@@ -9,8 +9,6 @@ mark these data
 '''
 from numpy import *
 import matplotlib.pyplot as plt
-from myalgo import quickSort
-from myalgo import dist
 '''
 #import data with python
 #in the following function createDataSet, we create the primitive data sets using array 
@@ -48,7 +46,10 @@ def classify(data, x0, K):
         distance.append(dist(data[i],x0))
     quickSort(distance)
     return distance[1:K]
-
+def dist(x,y):
+    x = array(x)
+    y = array(y)
+    return sqrt(sum((x-y)^2))
 def autoNorm(dataSet):
     minVal = dataSet.min(0)
     maxVal = dataSet.max(0)
